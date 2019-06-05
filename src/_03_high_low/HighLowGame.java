@@ -12,7 +12,7 @@ public class HighLowGame {
 	public static void main(String[] args) {
 		// 3. Change this line to give you a random number between 1 - 100. 
 		int random = new Random().nextInt(100);
-		System.out.println(random);
+		//System.out.println(random);
 		// 2. Print out the random variable above
 		
 		// 11. Repeat steps 1 to 10 ten times
@@ -26,15 +26,17 @@ int h =Integer.parseInt(k);
 			// 5. if the guess is correct
        if(h ==random) {
     	   JOptionPane.showMessageDialog(null, "you win");
-    	    
+    		System.exit(0);
        }else if(h >random) {
     	   JOptionPane.showMessageDialog(null, "that anwser is too high guess again");
        }else if(h <random) {
     	   JOptionPane.showMessageDialog(null, "that anwser is too low guess again");
        }
 	}
+	JOptionPane.showMessageDialog(null, "you lose");
 				// 6. Win
 				// 12. Use "System.exit(0);" to quit the game if the user guessed the right answer.
+
 			// 7. if the guess is high
 				// 8. Tell them it's too high
 			// 9. if the guess is low
